@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export configuration for Vercel
+  // Ensure proper configuration for Vercel
   images: {
     unoptimized: false,
-    domains: ['localhost']
+    domains: ['localhost', 'vercel.app']
+  },
+  // Ensure proper routing
+  trailingSlash: false,
+  // Enable experimental features if needed
+  experimental: {
+    appDir: true
   }
 }
 
