@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white flex items-center justify-center">
@@ -5,13 +7,13 @@ export default function Home() {
         {/* Profile Picture */}
         <div className="flex justify-center">
           <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden shadow-lg">
-            <img 
+            <Image 
               src="/Ambassadors Headshot.jpg" 
               alt="Carson Jones" 
+              width={192}
+              height={192}
               className="w-full h-full object-cover object-center"
-              style={{
-                objectPosition: 'center center'
-              }}
+              priority
             />
           </div>
         </div>
