@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  // Remove static export configuration for Vercel
   images: {
-    unoptimized: true
+    domains: ['localhost']
   }
 }
 
